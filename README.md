@@ -213,14 +213,68 @@ A more promising relationship seems to be the one between price and the number o
 # Interesting Aggregates
 Interesting Aggregates - In order to see if some zipcodes are good for business, or even if some are bad for it, I wanted to check the percentage of open restaurants in each zipcode im considering for my business. Honestly, I expected the percentages to all be pretty similar, and for the most part they were, however zipcode 96815 is clearly performing poorly. This is interesting because thats the famous tourist area of Waikiki. 96825 had the highest open percentage, and that area is Hawaii Kai which is an upscale neighborhood area in east Honolulu. These insights will be helpful to decide the area I should open my restaraunt. Particularly if I want to open in Waikiki, I will have to thoroughly analyze what makes a succesful restaraunt there because the closure rate is high there. Overall, the mean open percentage in my area of focus is around 72.64% which is promising.
 
-<bound method DataFrame.to_html of states_simple   Open  Permanently closed  Temporarily closed  open_percentage
-zip_code                                                                     
-96813           84.0                23.0                 4.0            75.68
-96814          148.0                52.0                12.0            69.81
-96815          121.0                58.0                30.0            57.89
-96816           84.0                27.0                 2.0            74.34
-96822           25.0                 4.0                 3.0            78.12
-96825           28.0                 7.0                 0.0            80.00>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>states_simple</th>
+      <th>Open</th>
+      <th>Permanently closed</th>
+      <th>Temporarily closed</th>
+      <th>open_percentage</th>
+    </tr>
+    <tr>
+      <th>zip_code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>96813</th>
+      <td>84.0</td>
+      <td>23.0</td>
+      <td>4.0</td>
+      <td>75.68</td>
+    </tr>
+    <tr>
+      <th>96814</th>
+      <td>148.0</td>
+      <td>52.0</td>
+      <td>12.0</td>
+      <td>69.81</td>
+    </tr>
+    <tr>
+      <th>96815</th>
+      <td>121.0</td>
+      <td>58.0</td>
+      <td>30.0</td>
+      <td>57.89</td>
+    </tr>
+    <tr>
+      <th>96816</th>
+      <td>84.0</td>
+      <td>27.0</td>
+      <td>2.0</td>
+      <td>74.34</td>
+    </tr>
+    <tr>
+      <th>96822</th>
+      <td>25.0</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>78.12</td>
+    </tr>
+    <tr>
+      <th>96825</th>
+      <td>28.0</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>80.00</td>
+    </tr>
+  </tbody>
+</table>
 
 # Assesment of Missingness
 ## NMAR Analysis
