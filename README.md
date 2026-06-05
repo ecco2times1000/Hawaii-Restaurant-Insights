@@ -259,3 +259,9 @@ When exploring the data I found the most promising relationship lie within the d
 **Test Statistic** - Absolute Pearson Correlation Coefficient
 **Significance** - 0.05
 I ran the test by dropping rows without a price and then used the price_vals column to measure the prices relationship to review counts. I shuffled the review counts 1000 times to find 1000 of the abs pearson correlations. Because the P-value is 0.0110 which is less than 0.05, I reject the null hypothesis that there is no correlation between price tier and the number of reviews for a restaurant. However, it's important to note that the correlation coefficient is very small, only 0.0975. This could be due to the patern noted earlier where the number of reviews seems to rise untill '$$$' and then drops off at '$$$$', but it's important to acknowldge that such a low correlation could suggest that price level is not a great predictor for the number of reviews a restaurant has.
+<iframe
+  src="assets/HT.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
