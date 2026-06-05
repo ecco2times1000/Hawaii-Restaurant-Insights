@@ -214,59 +214,28 @@ A more promising relationship seems to be the one between price and the number o
 
 # Interesting Aggregates
 Interesting Aggregates - In order to see if some zipcodes are good for business, or even if some are bad for it, I wanted to check the percentage of open restaurants in each zipcode im considering for my business. Honestly, I expected the percentages to all be pretty similar, and for the most part they were, however zipcode 96815 is clearly performing poorly. This is interesting because thats the famous tourist area of Waikiki. 96825 had the highest open percentage, and that area is Hawaii Kai which is an upscale neighborhood area in east Honolulu. These insights will be helpful to decide the area I should open my restaraunt. Particularly if I want to open in Waikiki, I will have to thoroughly analyze what makes a succesful restaraunt there because the closure rate is high there. Overall, the mean open percentage in my area of focus is around 72.64% which is promising.
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>states_simple</th>
-      <th>Open</th>
-      <th>Permanently closed</th>
-      <th>Temporarily closed</th>
-      <th>open_percentage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th></th>
-      <td>84.0</td>
-      <td>23.0</td>
-      <td>4.0</td>
-      <td>75.68</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>148.0</td>
-      <td>52.0</td>
-      <td>12.0</td>
-      <td>69.81</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>121.0</td>
-      <td>58.0</td>
-      <td>30.0</td>
-      <td>57.89</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>84.0</td>
-      <td>27.0</td>
-      <td>2.0</td>
-      <td>74.34</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>25.0</td>
-      <td>4.0</td>
-      <td>3.0</td>
-      <td>78.12</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>28.0</td>
-      <td>7.0</td>
-      <td>0.0</td>
-      <td>80.00</td>
-    </tr>
-  </tbody>
-</table>
+<bound method DataFrame.to_html of states_simple   Open  Permanently closed  Temporarily closed  open_percentage
+zip_code                                                                     
+96813           84.0                23.0                 4.0            75.68
+96814          148.0                52.0                12.0            69.81
+96815          121.0                58.0                30.0            57.89
+96816           84.0                27.0                 2.0            74.34
+96822           25.0                 4.0                 3.0            78.12
+96825           28.0                 7.0                 0.0            80.00>
 
+# Assesment of Missingness
+## NMAR Analysis
+I suspect that the 'hours' column has NMAR data. My reasoning is that businesses that are small scale, unregulated, unpermited, or failing are more likely to have speratic schedules that are more dictated by the convinience of the owner. For example the google review page for a sidehustle like a roadside fruit stand would omit hours because the owner only operates when they have free time. Data that could be collected to explain the missingness would be legal registration details like wether a business is an LLC or sole propritorship as well as if they have the necessary permits required for their category of business.
+## Missingness Dependency
+To anylize missingness in businesses I will conduct missingness dependency test on the columns price and num_of_reviews
+**Null Hypothesis** - The missingness of price does not depend on the number of reviews
+**Alternate Hypothesis** - The missingness of price does depend on the number of reviews 
+**Test Statistic** - Difference of Means
+**Significance level** - 0.05
+After running the test I found a difference in means of 219.81 and a p value of 0.0000, therefore we can reject the null and say the missingness of price does depend on the number of reviews
+Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
+**Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
+**Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
+**Test Statistic** - Difference of Proportion
+**Significance level** - 0.05
+The test revealed a a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
