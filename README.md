@@ -281,24 +281,29 @@ Interesting Aggregates - In order to see if some zipcodes are good for business,
 I suspect that the 'hours' column has NMAR data. My reasoning is that businesses that are small scale, unregulated, unpermited, or failing are more likely to have speratic schedules that are more dictated by the convinience of the owner. For example the google review page for a sidehustle like a roadside fruit stand would omit hours because the owner only operates when they have free time. Data that could be collected to explain the missingness would be legal registration details like wether a business is an LLC or sole propritorship as well as if they have the necessary permits required for their category of business.
 ## Missingness Dependency
 To anylize missingness in businesses I will conduct missingness dependency test on the columns price and num_of_reviews
+
 **Null Hypothesis** - The missingness of price does not depend on the number of reviews
 **Alternate Hypothesis** - The missingness of price does depend on the number of reviews 
 **Test Statistic** - Difference of Means
 **Significance level** - 0.05
 
 After running the test I found a difference in means of 219.81 and a p value of 0.0000, therefore we can reject the null and say the missingness of price does depend on the number of reviews
-Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
-- **Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
-- **Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
-- **Test Statistic** - Difference of Proportion
-- **Significance level** - 0.05
-The test revealed a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
+
 <iframe
   src="assets/Missing.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+
+Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
+- **Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
+- **Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
+- **Test Statistic** - Difference of Proportion
+- **Significance level** - 0.05
+  
+The test revealed a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
+
 <iframe
   src="assets/Missing2.html"
   width="800"
