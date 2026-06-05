@@ -57,6 +57,7 @@ store is open, closed, or temporarily closed
 - In order to give the do analysis of the "price" column, I made the strings "$"..."$$$$" into 1...4
 - My cleaned df restaurants only has 1055 rows compared to the original df's 21507 rows
 
+<div style="overflow-x: auto;">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -183,5 +184,6 @@ store is open, closed, or temporarily closed
     </tr>
   </tbody>
 </table>
+</div>
 
 
