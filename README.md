@@ -203,7 +203,7 @@ Bivariate Analysis - As I've said before, I suspect there is a correlation betwe
   height="600"
   frameborder="0"
 ></iframe>
-A more promising relationship seems to be the one between price and the number of reviews. It seems that the number of reviews gradually increases until the '$$$' mark and then slightly drops off. This could mean that restaraunts with price '$$$' have the most reviews, and potenitally the most business.
+A more promising relationship seems to be the one between price and the number of reviews. It seems that the number of reviews gradually increases until the price level 3 mark and then slightly drops off. This could mean that restaraunts with price price level 3 have the most reviews, and potenitally the most business.
 <iframe
   src="assets/BA_plot2.html"
   width="800"
@@ -212,6 +212,7 @@ A more promising relationship seems to be the one between price and the number o
 ></iframe>
 # Interesting Aggregates
 Interesting Aggregates - In order to see if some zipcodes are good for business, or even if some are bad for it, I wanted to check the percentage of open restaurants in each zipcode im considering for my business. Honestly, I expected the percentages to all be pretty similar, and for the most part they were, however zipcode 96815 is clearly performing poorly. This is interesting because thats the famous tourist area of Waikiki. 96825 had the highest open percentage, and that area is Hawaii Kai which is an upscale neighborhood area in east Honolulu. These insights will be helpful to decide the area I should open my restaraunt. Particularly if I want to open in Waikiki, I will have to thoroughly analyze what makes a succesful restaraunt there because the closure rate is high there. Overall, the mean open percentage in my area of focus is around 72.64% which is promising.
+
 <bound method DataFrame.to_html of states_simple   Open  Permanently closed  Temporarily closed  open_percentage
 zip_code                                                                     
 96813           84.0                23.0                 4.0            75.68
