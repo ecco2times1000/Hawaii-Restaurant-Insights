@@ -204,7 +204,7 @@ Bivariate Analysis - As I've said before, I suspect there is a correlation betwe
   frameborder="0"
 ></iframe>
 
-A more promising relationship seems to be the one between price and the number of reviews. It seems that the number of reviews gradually increases until the $$$ mark and then slightly drops off. This could mean that restaraunts with price $$$ have the most reviews, and potenitally the most business.
+A more promising relationship seems to be the one between price and the number of reviews. It seems that the number of reviews gradually increases until the '$$$' mark and then slightly drops off. This could mean that restaraunts with price '$$$' have the most reviews, and potenitally the most business.
 <iframe
   src="assets/BA_plot2.html"
   width="800"
