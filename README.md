@@ -188,9 +188,14 @@ store is open, closed, or temporarily closed
 
 # Unvariate Analysis
 This plot is displaying a histogram showing the distribution of the average ratings for restaraunts in my area of focus. The distribution is skewed to the right and it reveals how most ratings are pretty close to the mean of approximately 4.2 stars, which is pretty high considering the maximum rating is 5.
-
+<iframe
+  src="assets/UA_plot.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 # Bivariate Analysis
-hip
+Bivariate Analysis - As I've said before, I suspect there is a correlation between average rating and the number of reviews for a restaraunt. Before I test for correlation I wanted to see the distribution between the two variables. I uses logscale again to fit in num_of_reviews. Unfourtunately the graph doesent clearly reveal a relationship between the two variables. The average ratings seem to hover around the mean of 4.2 across the board. It even seems avg rating could drop slightly the more reviews a establishment has, which goes against my what I thought.
 
 
