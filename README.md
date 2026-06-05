@@ -239,3 +239,15 @@ Next I wanted to test wether the missingness of Price depended on wether the gma
 **Test Statistic** - Difference of Proportion
 **Significance level** - 0.05
 The test revealed a a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
+<iframe
+  src="assets/Missing.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+<iframe
+  src="assets/Missing2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
