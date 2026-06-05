@@ -297,6 +297,7 @@ After running the test I found a difference in means of 219.81 and a p value of 
 ></iframe>
 
 Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
+
 - **Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
 - **Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
 - **Test Statistic** - Difference of Proportion
