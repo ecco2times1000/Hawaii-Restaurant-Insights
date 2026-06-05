@@ -231,6 +231,7 @@ To anylize missingness in businesses I will conduct missingness dependency test 
 **Alternate Hypothesis** - The missingness of price does depend on the number of reviews 
 **Test Statistic** - Difference of Means
 **Significance level** - 0.05
+
 After running the test I found a difference in means of 219.81 and a p value of 0.0000, therefore we can reject the null and say the missingness of price does depend on the number of reviews
 Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
 - **Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
