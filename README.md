@@ -13,8 +13,6 @@ Lets say I wanted to open a restaraunt, particularly in Honolulu. Then I would w
 | `resp` | business response to the review including unix time and text of the response |
 | `gmap_id` | ID of the business |
 
----
-
 ## businesses
 
 | Column | Description |
@@ -34,3 +32,17 @@ Lets say I wanted to open a restaraunt, particularly in Honolulu. Then I would w
 | `state` | the current status of the business (e.g., permanently closed) |
 | `relative_results` | relative businesses recommended by Google |
 | `url` | URL of the business |
+
+---
+
+# Data Cleaning and Exploratory Data Analysis
+- The data is collected from all of Hawaii. Since I want to open a restaraunt in Honolulu, the first thing I'll do is focus the businesses dataset on the most prominent Honolulu zip codes.
+| Zip Code | Area |
+| :--- | :--- |
+| `96815` | Waikiki, Kapahulu |
+| `96813` | Downtown Honolulu, Nuuanu, Kakaako (West) |
+| `96814` | Ala Moana, Kakaako (East), Makiki (Lower) |
+| `96816` | Kaimuki, Kahala, Waialae, Palolo |
+| `96822` | Manoa, Makiki (Upper), Tantalus |
+| `96825` | Hawaii Kai |
+- The data is now focused on Honolulu, however it still contains all sorts of businesses. Now I'll keep only businesses categorized as restaraunts
