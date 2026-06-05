@@ -37,6 +37,7 @@ Lets say I wanted to open a restaraunt, particularly in Honolulu. Then I would w
 
 # Data Cleaning and Exploratory Data Analysis
 - The data is collected from all of Hawaii. Since I want to open a restaraunt in Honolulu, the first thing I'll do is focus the businesses dataset on the most prominent Honolulu zip codes.
+
 | Zip Code | Area |
 | :--- | :--- |
 | `96815` | Waikiki, Kapahulu |
@@ -45,4 +46,5 @@ Lets say I wanted to open a restaraunt, particularly in Honolulu. Then I would w
 | `96816` | Kaimuki, Kahala, Waialae, Palolo |
 | `96822` | Manoa, Makiki (Upper), Tantalus |
 | `96825` | Hawaii Kai |
-- The data is now focused on Honolulu, however it still contains all sorts of businesses. Now I'll keep only businesses categorized as restaraunts
+- The data is now focused on Honolulu, however it still contains all sorts of businesses. Now I'll keep only businesses categorized as restaraunts.
+- 
