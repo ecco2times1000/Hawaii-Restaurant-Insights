@@ -274,4 +274,16 @@ For my final model I decided to pivot twoards a random forrest classifier. I add
   height="600"
   frameborder="0"
 ></iframe>
-
+# Fairness Analysis
+For my fairness analysis I will seperate restaurants into two groups, fast food (group X) and non-fast food(group Y). The evaluation metric will be F1 score because the model must be evenly evaluated on its ability to be precise and correctly detirmine 'closed' states
+- **Null Hypothesis** - My model is fair. The F1 score for fast food and non-fast food restaurants is roughly the same, any difference comes from random chance
+- **Alternate Hypothesis** - My model is unfair. The F1 score for fast food is significantly different from non-fast food. 
+- **Test Statistic - Absolute difference between F1 scores
+- **Significance** - 0.05
+After evaluating, the fast food group got an F1 score of 0.000 and the non-fast food group got an F1 score of 0.5484. This resulted in an abs difference of 0.5484. My permutation test had 1000 repititions where I shuffled the fast food labels to simulate that the fast food label has no effect on the models results. The p-value recieved was 0.07, since thats higher than 0.05 I fail to reject the null. At fist glance the abs difference of 0.5484 implies the model is heavily biased, however since so few restaurants had the fast food category set, shuffling the fast food labels made the fast food group F1 score 0.000 7% of the time. Therefore I fail to reject the null, and cant definitively say my model has significantly different F1 scores in fast food restaurants vs. non-fast food restaurants.
+<iframe
+  src="assets/FA.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
