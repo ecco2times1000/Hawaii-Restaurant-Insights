@@ -314,6 +314,7 @@ The test revealed a difference in proportion of 0.004413 and a p value of 0.5060
 
 # Hypothesis Testing
 When exploring the data I found the most promising relationship lie within the distribution of review counts by price tier. I've decided to conduct a test as to wether there is a positive correlation between price and the number of reviews a restaraunt has in my area of focus. Using the number of reviews as a measure of success for a restaurant, this could give insight into wether higher prices can contribute to the success of my business.
+
 - **Null Hypothesis** - There is no correlation between price tier and the number of reviews for a restaurant
 - **Alternate Hypothesis** - There is a correlation between price tier and the number of reviews for a restaurant
 - **Test Statistic** - Absolute Pearson Correlation Coefficient
@@ -340,6 +341,7 @@ For my final model I decided to pivot twoards a random forrest classifier. I add
 ></iframe>
 # Fairness Analysis
 For my fairness analysis I will seperate restaurants into two groups, fast food (group X) and non-fast food(group Y). The evaluation metric will be F1 score because the model must be evenly evaluated on its ability to be precise and correctly detirmine 'closed' states
+
 - **Null Hypothesis** - My model is fair. The F1 score for fast food and non-fast food restaurants is roughly the same, any difference comes from random chance
 - **Alternate Hypothesis** - My model is unfair. The F1 score for fast food is significantly different from non-fast food. 
 - **Test Statistic** - Absolute difference between F1 scores
