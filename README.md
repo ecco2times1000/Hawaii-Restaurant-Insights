@@ -188,12 +188,7 @@ store is open, closed, or temporarily closed
 
 # Unvariate Analysis
 This plot is displaying a histogram showing the distribution of the average ratings for restaraunts in my area of focus. The distribution is skewed to the right and it reveals how most ratings are pretty close to the mean of approximately 4.2 stars, which is pretty high considering the maximum rating is 5.
-<iframe
-  src="assets/UA_plot.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
+
 
 # Bivariate Analysis
 hip
