@@ -1,4 +1,5 @@
-## Introduction
+**Introduction**
+---
 Lets say I wanted to open a restaraunt, particularly in Honolulu. Then I would want to prepare myself and gain insights into what makes a succesful business in the area. This project will analyse a dataset of Google reviews from Hawaii scraped by the authors of these papers https://aclanthology.org/2022.acl-long.426.pdf, https://arxiv.org/pdf/2207.00422. I want to find out what it takes to run a succesful restaraunt in Honolulu, and my first related question when presented with this data set is if there is a correlation between a restaraunts average rating, and their number of reviews. I'm interested in the number of reviews because more reviews imply more business. There are 2 original data frames, one focused on businesses with 21507 rows and 15 columns, and one focues on individual reviews with 1504347 rows and 8 columns
 ## reviews
 
@@ -53,7 +54,7 @@ store is open, closed, or temporarily closed
 - I changed the None values into np.nan values for consistency
 - I wanted to check for duplicate rows, so I checked the gmap_id value counts. I realized there were some duplicate rows so I removed them
 - In order to give the do analysis of the "price" column, I made the strings "$"..."$$$$" into 1...4
-- My cleaned df restaurants
+- My cleaned df restaurants only has 1055 rows compared to the original df's 21507 rows
 
 <table border="1" class="dataframe">
   <thead>
