@@ -283,7 +283,7 @@ I suspect that the 'hours' column has NMAR data. My reasoning is that businesses
 To anylize missingness in businesses I will conduct missingness dependency test on the columns price and num_of_reviews
 
 **Null Hypothesis** - The missingness of price does not depend on the number of reviews
-**Alternate Hypothesis** - The missingness of price does depend on the number of reviews 
+**Alternate Hypothesis** - The missingness of price does depend on the number of reviews
 **Test Statistic** - Difference of Means
 **Significance level** - 0.05
 
