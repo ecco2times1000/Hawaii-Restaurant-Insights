@@ -197,5 +197,17 @@ This plot is displaying a histogram showing the distribution of the average rati
 
 # Bivariate Analysis
 Bivariate Analysis - As I've said before, I suspect there is a correlation between average rating and the number of reviews for a restaraunt. Before I test for correlation I wanted to see the distribution between the two variables. I uses logscale again to fit in num_of_reviews. Unfourtunately the graph doesent clearly reveal a relationship between the two variables. The average ratings seem to hover around the mean of 4.2 across the board. It even seems avg rating could drop slightly the more reviews a establishment has, which goes against my what I thought.
+<iframe
+  src="assets/BA_plot1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
-
+A more promising relationship seems to be the one between price and the number of reviews. It seems that the number of reviews gradually increases until the $$$ mark and then slightly drops off. This could mean that restaraunts with price $$$ have the most reviews, and potenitally the most business.
+<iframe
+  src="assets/BA_plot2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
