@@ -233,11 +233,11 @@ To anylize missingness in businesses I will conduct missingness dependency test 
 **Significance level** - 0.05
 After running the test I found a difference in means of 219.81 and a p value of 0.0000, therefore we can reject the null and say the missingness of price does depend on the number of reviews
 Next I wanted to test wether the missingness of Price depended on wether the gmap id had an a in it.
-**Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
-**Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
-**Test Statistic** - Difference of Proportion
-**Significance level** - 0.05
-The test revealed a a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
+- **Null Hypothesis** - The missingness of price does not depend on wether the gmap id has an a in it
+- **Alternate Hypothesis** - The missingness of price does depend on wether the gmap id has an a in it
+- **Test Statistic** - Difference of Proportion
+- **Significance level** - 0.05
+The test revealed a difference in proportion of 0.004413 and a p value of 0.5060, therefore we fail to reject the null that the missingness of price doesent depend on wether the gmap id has an a in it.
 <iframe
   src="assets/Missing.html"
   width="800"
@@ -257,6 +257,7 @@ When exploring the data I found the most promising relationship lie within the d
 - **Alternate Hypothesis** - There is a correlation between price tier and the number of reviews for a restaurant
 - **Test Statistic** - Absolute Pearson Correlation Coefficient
 - **Significance** - 0.05
+
 I ran the test by dropping rows without a price and then used the price_vals column to measure the prices relationship to review counts. I shuffled the review counts 1000 times to find 1000 of the abs pearson correlations. Because the P-value is 0.0110 which is less than 0.05, I reject the null hypothesis that there is no correlation between price tier and the number of reviews for a restaurant. However, it's important to note that the correlation coefficient is very small, only 0.0975. This could be due to the patern noted earlier where the number of reviews seems to rise untill '$$$' and then drops off at '$$$$', but it's important to acknowldge that such a low correlation could suggest that price level is not a great predictor for the number of reviews a restaurant has.
 <iframe
   src="assets/HT.html"
